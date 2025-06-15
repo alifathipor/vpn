@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyalNext_Status</title>
+	<link href="https://fonts.googleapis.com/css2?family=Vazir:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-shabnam">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                <use href="#circle-half"></use>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                        <use href="#sun-fill"></use>
+                    </svg>
+                    Light
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                        <use href="#moon-stars-fill"></use>
+                    </svg>
+                    Dark
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                    aria-pressed="true">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                        <use href="#circle-half"></use>
+                    </svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">RoyalNext</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home" data-bs-toggle="tab">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#android" data-bs-toggle="tab">اندروید</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ios" data-bs-toggle="tab">ایفون</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#windows" data-bs-toggle="tab">ویندوز</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mac" data-bs-toggle="tab">مک</a>
+                    </li>
+                     <!--<li class="nav-item">
+                        <a class="nav-link" href="#iosipv6" data-bs-toggle="tab">ios ipv6</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#androidipv6" data-bs-toggle="tab">android ipv6</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tab-content">
+        <div class="tab-pane fade active show" id="home">
+            <div class="container">
+                <main class="form-signin w-100 m-auto">
+                    <form id="configForm">
+                        <h1 class="h3 mb-3 fw-normal">کانفیگ</h1>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="inputText">
+                            <small class="error-message" id="warningMessage"></small>
+                        </div>
+                        <button class="btn btn-primary w-100 py-2" type="submit" onclick="sendRequest()">دریافت کانفیگ<span class="spinner-border spinner-border-sm" aria-hidden="true"
+                                id="loadingSpinner"></span>
+                            <span class="visually-hidden" role="status" id="loadingSpinner">لطفا منتظر بمانید ...</span>
+                        </button>
+                    </form>
+                </main>
+
+                <div id="result">
+                    <!-- Display result here -->
+                </div>
+				<button type="button" class="btn-learn btn btn-bd-primary w-100 py-2" id="copyConfigBtn" onclick="copyConfig()">در کلیبورد ذخیره  بشه</button>  
+				<button type="button" class="btn-learn btn btn-outline-primary w-100 py-2" id="learnBtnMenu1" onclick="showTab('android')">آموزش اندروید</button>
+				<button type="button" class="btn-learn btn btn-outline-primary w-100 py-2" id="learnBtnMenu2" onclick="showTab('ios')">آموزش ایفون</button>
+				<button type="button" class="btn-learn btn btn-outline-primary w-100 py-2" id="learnBtnMenu3" onclick="showTab('windows')">آموزش ویندوز</button>
+				<button type="button" class="btn-learn btn btn-outline-primary w-100 py-2" id="learnBtnMenu4" onclick="showTab('mac')">آموزش مک</button>
+				   <!--<button type="button" class="btn btn-primary w-100 py-2" id="copyConfigBtn" onclick="copyConfig()">Copied
+                    to clipboard</button>-->
+               
+            </div>
+            <!-- Add your home page content here -->
+        </div>
+        <div class="tab-pane fade" id="android">
+            <div class="gallery">
+                <div class="result-columns">
+                    <a href="https://github.com/2dust/v2rayNG/releases/download/1.8.35/v2rayNG_1.8.35_armeabi-v7a.apk"
+                        download="proposed_file_name"><button class="btn btn-primary w-100 py-2">دانلود
+                            V2rayNG</button></a>
+                    <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end"><img
+                            src="assets/android/1.jpg" alt="1" width="200px"></div>
+                    <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end"><img
+                            src="assets/android/2.jpg" alt="2" width="200px"></div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="ios">
+            <div class="gallery">
+                <div class="result-columns">
+                    <a href="https://apps.apple.com/app/id6450534064" download="proposed_file_name"><button
+                            class="btn btn-primary w-100 py-2">دانلود Streisand</button></a>
+                    <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end"><img
+                            src="assets/ios/1.jpg" alt="1" width="200px"></div>
+                    <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end"><img
+                            src="assets/ios/2.jpg" alt="2" width="200px"></div>
+                  <!--  <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end"><img
+                            src="assets/ios/3.jpg" alt="3" width="200px"></div>
+                    <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end"><img
+                            src="assets/ios/4.jpg" alt="4" width="200px"></div>
+                    <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end"><img
+                            src="assets/ios/5.jpg" alt="5" width="200px"></div> -->
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="windows">
+            <div class="gallery">
+                <div class="result-columns">
+                    <a href="https://github.com/2dust/v2rayN/releases/download/6.53/v2rayN-With-Core.zip"
+                        download="proposed_file_name"><button class="btn btn-primary w-100 py-2">دانلود
+                            V2rayN</button></a>
+                  <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end">
+                        <video class="video-container" width="200px" controls>
+                            <source src="assets/windows/windows.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="mac">
+            <div class="gallery">
+                <div class="result-columns">
+                    <a href="https://apps.apple.com/de/app/streisand/id6450534064?l=en-GB"
+                        download="proposed_file_name"><button class="btn btn-primary w-100 py-2">دانلود
+                            Streisand</button></a>
+                    <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end"><img
+                            src="assets/ios/1.jpg" alt="1" width="200px"></div>
+                    <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end"><img
+                            src="assets/ios/2.jpg" alt="2" width="200px"></div>
+                  <!--  <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end"><img
+                            src="assets/ios/3.jpg" alt="3" width="200px"></div>
+                    <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end"><img
+                            src="assets/ios/4.jpg" alt="4" width="200px"></div>
+                    <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end"><img
+                            src="assets/ios/5.jpg" alt="5" width="200px"></div> -->
+                </div>
+            </div>
+            <!-- Add your macOS download page content here -->
+        </div>
+        <div class="tab-pane fade" id="iosipv6">
+            <div class="gallery">
+                <div class="result-columns">
+
+                    <a href="https://mobileconfig.azurewebsites.net/" download="proposed_file_name"><button
+                            class="btn btn-primary w-100 py-2">وب سایت</button></a>
+                    <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end">
+                        <video class="video-container" width="200px" controls>
+                            <source src="assets/ios/ios6.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end">
+                        <h3>ایرانسل mtnInternet</h3>
+                        <h3>همراه اول mciInternet</h3>
+                        <h3>رایتل RighTel</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Add your macOS download page content here -->
+        </div>
+        <div class="tab-pane fade" id="androidipv6">
+            <div class="gallery">
+                <div class="result-columns">
+
+                   
+                    <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end">
+                        <video class="video-container" width="200px" controls>
+                            <source src="assets/android/android6.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="result-column-gallery p-3 bg-info bg-opacity-10 border border-info rounded-end">
+                        <h3>ایرانسل mtnInternet</h3>
+                        <h3>همراه اول mciInternet</h3>
+                        <h3>رایتل RighTel</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Add your macOS download page content here -->
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="scripts/script-v4.6.0.js" cache-control="no-cache"></script>
+
+</body>
+
+</html>
